@@ -33,9 +33,6 @@ Set PostgreSQL username, password, database, host and dialect in 'configs/postgr
 
 ### Sequelize
 ````
-# Install sequelize-cli
-npm install -D sequelize-cli
-
 # Install dependencies
 npm install
 
