@@ -18,10 +18,10 @@
   },
   "homepage": "https://github.com/xxgicoxx/steamgram#readme",
   "keywords": [
+    "steamgram",
     "steam",
     "friends",
-    "notification",
-    "game"
+    "notification"
   ],
   "dependencies": {
     "node-cron": "^2.0.3",
