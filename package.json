@@ -1,22 +1,24 @@
 {
-  "name": "steamgram",
-  "displayName": "SteamGram",
+  "name": "steamgram-bot",
+  "displayName": "Steamgram Bot",
   "version": "2.0.0",
   "description": "Telegram bot for Steam friends notifications",
   "author": "Giovani de Oliveira <giovanioliveira@outlook.com.br>",
   "license": "MIT",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node server.js",
+    "migrate": "npx sequelize-cli db:migrate",
+    "seed": "npx sequelize-cli db:seed:all"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/xxgicoxx/steamgram.git"
+    "url": "https://github.com/xxgicoxx/steamgram-bot.git"
   },
   "bugs": {
-    "url": "https://github.com/xxgicoxx/steamgram/issues"
+    "url": "https://github.com/xxgicoxx/steamgram-bot/issues"
   },
-  "homepage": "https://github.com/xxgicoxx/steamgram#readme",
+  "homepage": "https://github.com/xxgicoxx/steamgram-bot#readme",
   "keywords": [
     "steamgram",
     "steam",
@@ -24,18 +26,17 @@
     "notification"
   ],
   "dependencies": {
-    "node-cron": "^2.0.3",
-    "pg": "^7.14.0",
-    "request": "^2.88.0",
-    "request-promise-native": "^1.0.8",
-    "sequelize": "^5.21.2",
-    "steamworks-api": "0.0.1",
-    "telegram-node-bot": "^4.0.5"
+    "dotenv": "^16.0.0",
+    "node-cron": "^3.0.0",
+    "node-telegram-bot-api": "^0.56.0",
+    "pg": "^8.7.3",
+    "sequelize": "^6.18.0",
+    "steamworks-api": "^0.0.3"
   },
   "devDependencies": {
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-plugin-import": "^2.20.1",
-    "sequelize-cli": "^5.5.1"
+    "eslint": "^8.12.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "sequelize-cli": "^6.4.1"
   }
 }
