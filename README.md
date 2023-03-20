@@ -41,7 +41,7 @@ Get your token from @BotFather and set 'TELEGRAM_TOKEN' in .env.
 ### 3. Steam
 ````
 # Configure
-Get your key from https://steamcommunity.com/dev/apikey and set in .env
+Get your key from https://steamcommunity.com/dev/apikey and set in .env.
 ````
 
 ### 4. PostgreSQL
